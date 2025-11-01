@@ -174,15 +174,13 @@ runner = Runner(
 )
 ```
 
-## Additional Resources
+### How It All Works Together
 
-```python
-runner = Runner(
-    agent=question_answering_agent,
-    app_name=APP_NAME,
-    session_service=session_service,
-)
-```
+1. A session is created with initial user preferences.
+2. Agent instructions use placeholders that reference state keys.
+3. Runner automatically injects state values into the agent's instructions.
+4. The agent responds based on the user's stored preferences.
+5. Session persists so future messages in the same session remember the user preferences.
 
 ## Additional Resources
 
