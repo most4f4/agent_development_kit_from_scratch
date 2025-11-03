@@ -21,7 +21,7 @@ This example implements a customer service system for an online course platform,
 ## Project Structure
 
 ```
-7-stateful-multi-agent/
+8-stateful-multi-agent/
 │
 ├── customer_service_agent/         # Main agent package
 │   ├── __init__.py                 # Required for ADK discovery
