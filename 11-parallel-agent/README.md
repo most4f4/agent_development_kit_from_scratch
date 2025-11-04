@@ -17,6 +17,7 @@ Use Parallel Agents when you need to execute multiple independent tasks efficien
 In this example, we've created a system monitoring application that uses a Parallel Agent to gather system information. The workflow consists of:
 
 1. **Parallel System Information Gathering**: Using a `ParallelAgent` to concurrently collect data about:
+
    - CPU usage and statistics
    - Memory utilization
    - Disk space and usage
@@ -26,14 +27,17 @@ In this example, we've created a system monitoring application that uses a Paral
 ### Sub-Agents
 
 1. **CPU Info Agent**: Collects and analyzes CPU information
+
    - Retrieves core counts, usage statistics, and performance metrics
    - Identifies potential performance issues (high CPU usage)
 
 2. **Memory Info Agent**: Gathers memory usage information
+
    - Collects total, used, and available memory
    - Analyzes memory pressure and swap usage
 
 3. **Disk Info Agent**: Analyzes disk space and usage
+
    - Reports on total, used, and free disk space
    - Identifies disks that are running low on space
 
@@ -91,6 +95,7 @@ This hybrid approach demonstrates how to combine workflow agent types for optima
 ### Setup
 
 1. Activate the virtual environment from the root directory:
+
 ```bash
 # macOS/Linux:
 source ../.venv/bin/activate
@@ -101,6 +106,7 @@ source ../.venv/bin/activate
 ```
 
 2. Copy the `.env.example` file to `.env` and add your Google API key:
+
 ```
 GOOGLE_API_KEY=your_api_key_here
 ```
@@ -108,7 +114,7 @@ GOOGLE_API_KEY=your_api_key_here
 ### Running the Example
 
 ```bash
-cd 10-parallel-agent
+cd 11-parallel-agent
 adk web
 ```
 
@@ -151,4 +157,4 @@ ADK offers different types of workflow agents for different needs:
 ## Additional Resources
 
 - [ADK Parallel Agents Documentation](https://google.github.io/adk-docs/agents/workflow-agents/parallel-agents/)
-- [Full Example: Parallel Web Research](https://google.github.io/adk-docs/agents/workflow-agents/parallel-agents/#full-example-parallel-web-research) 
+- [Full Example: Parallel Web Research](https://google.github.io/adk-docs/agents/workflow-agents/parallel-agents/#full-example-parallel-web-research)
